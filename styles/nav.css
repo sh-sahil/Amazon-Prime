@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+nav{
+    background-color: black;
+    height: 32px;
+    z-index: 60;
+    position: relative;
+}
+.logo{
+    width: 70px;
+    position: absolute;
+    top: 10px;
+    left: 19%;
+}
+nav ul{
+    float: right;
+    margin-right: 35vw;
+    margin-top: 4px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.option{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #aaaaaa;
+    background: transparent;
+    border: none;
+}
+
+
+#check{
+    display: none;
+}
+
+
+
+label .material-symbols-outlined{
+    color: #aaaaaa;
+    font-size: 25px;
+    font-weight: bold;
+    float: left;
+    line-height: 35px;
+    margin-left: 15px;
+    cursor: pointer;
+    display: none;
+    margin-top: 6px;
+}
+
+.list{
+    color:white;
+}
+
+.cat-profile{
+    width: 23px;
+    height: 23px;
+    border-radius: 20px;
+    top: 4px;
+    float: right;
+    margin-right: 180px;
+    position: absolute;
+    right: 0px;
+}
+
+.searches{
+    font-size: 23px !important;
+    top: 4px;
+    margin-right: 366px;
+    position: absolute;
+    right: 0;
+    color: #aaaaaa;
+}
+
+.btn{
+    position: absolute;
+    right: 273px;
+    background: transparent;
+    border: none;
+    color: #aaaaaa;
+    top: 9px;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.lang-btn{
+    position: absolute;
+    right: 220px;
+    background: transparent;
+    border: none;
+    color: #aaaaaa;
+    top: 9px;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+
+@media (max-width: 920px){
+    nav .logo{
+        left:14%;
+        top:15px;
+        width: 90px;
+    }
+
+    nav ul li .option{
+        font-size: 15px;
+    }
+
+    nav ul{
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 860px){
+    label .menubar{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width:100%;
+        height:100vh;
+        background: #191E24;
+        top:28px;
+        left:-200%;
+        text-align: center;
+        transition: all .4s;
+    }
+    nav ul li{
+        display: block;
+        margin: 10px 0px;
+    }
+
+    nav ul li .option{
+        font-size: 18px;
+    }
+    #check:checked ~ ul{
+        left: 0px !important;
+    }
+
+    #check:checked ~ label .menubar{
+        display: none;
+    }
+    #check:checked ~ label .close{
+        display: block;
+    }
+}

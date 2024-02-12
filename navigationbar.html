@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+        nav{
+            background-color: rgb(40, 129, 158);
+            height: 50px;
+        }
+        .logo{
+            width: 80px;
+            position: absolute;
+            top: 15px;
+            left: 12%;
+        }
+        nav ul{
+            float: right;
+            margin-right:150px;
+        }
+        nav ul li{
+            display: inline-block;
+            margin: 0 10px;
+            margin-top: 10px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            position: relative;
+            color:white;
+            font-size: 18px;
+            padding: 5px 0;
+        }
+
+        nav ul li a:before{
+            position: absolute;
+            content: '';
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 100%;
+            background: white;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform .2s linear;
+        }
+
+        nav ul li a:hover:before{
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+
+        label .material-symbols-outlined{
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            float: left;
+            line-height: 50px;
+            margin-right: 20px;
+            cursor: pointer;
+            display: none;
+        }
+        #check{
+            display: none;
+        }
+
+        .dropdown{
+            color: white;
+            text-align: center;
+        }
+
+        @media (max-width: 944px){
+            nav .logo{
+                left:10%;
+                top:20px;
+                width: 70px;
+            }
+
+            nav ul li a{
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 860px){
+            label .menubar{
+                display: block;
+            }
+            ul{
+                position: fixed;
+                width:100%;
+                height:100vh;
+                background: #34495e;
+                top:50px;
+                left:-100%;
+                text-align: center;
+                transition: all .4s;
+            }
+            nav ul li{
+                display: block;
+                margin: 10px 0px;
+                line-height:30px;
+            }
+            nav ul li a{
+                font-size: 18px;
+            }
+            #check:checked ~ ul{
+                left: 0px;
+            }
+
+            #check:checked ~ label .menubar{
+                display: block;
+            }
+            #check:checked ~ label .close{
+                display: none;
+            }
+        }
+
+        .cat-profile{
+            width: 25px;
+            height: 25px;
+            border-radius: 20px;
+            top: 2px;
+            float: right;
+            margin-right: 30px;
+            position: absolute;
+            right: 0px;
+        }
+
+        .search{
+            width: 25px;
+            height: 25px;
+            border-radius: 20px;
+            top: 12px;
+            margin-right: 30px;
+            position: absolute;
+            right: 28vw;
+        }
+
+        .car{
+            background: transparent;
+            border: none;
+            color:white;
+            padding:0px;
+        }
+        .options{
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="menu"><span class="material-symbols-outlined menubar">
+                menu
+            </span></i>
+            <i class="close" id="cancel"><span class="material-symbols-outlined close">
+                close
+            </span></i>
+        </label>
+        <img class="logo" src="imagaes/logo-color.png" alt="">
+        <ul>
+            <li> 
+                <select class="car">
+                    <option class="options" value="volvo">Home</option>
+                </select>
+            </li>
+            <li> <select class="car">
+                <option class="options" value="volvo">Store</option>
+            </select></li>
+            <li> 
+                <select class="car">
+                    <option class="options" value="volvo">Live Tv</option>
+                </select>
+            </li>
+            <li> 
+                <select class="car">
+                    <option class="options" value="volvo">Category</option>
+                </select>
+            </li>
+
+            <li class="list">Try For Free</span></li>
+            <li class="list">EN <span class="material-symbols-outlined dropdown">
+                expand_more
+                </span></li>
+            </ul>
+        </ul>
+        <span class="material-symbols-outlined search">search</span>
+
+        <img class="cat-profile" src="imagaes/cat.jfif" alt="">
+    </nav>
+</body>
+</html>

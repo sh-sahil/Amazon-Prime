@@ -1,0 +1,165 @@
+@media screen and (max-width: 920px){
+    nav{
+        height: 50px;
+    }
+
+    .cat-profile{
+        margin-top: 7px;
+        float: right;
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+    }
+    .lang-btn{
+        font-size: 15px;
+        margin-top: 7px;
+        right: 50px;
+    }
+    .btn{
+        display: none;
+    }
+    .searches{
+        font-size: 25px !important;
+        margin-top: 9px;
+        margin-right: 97px;
+    }
+    .left-black{
+        position: relative;
+        width: 100vw;
+        top: -40px;
+        height: 300px;
+        box-shadow: none;
+    }
+    .fc{
+        height: 630px;
+    }
+    .text-container{
+        text-align: center;
+        top: 0px;
+        left: 0px; 
+    }
+    .welcome{
+        font-size: 46px;
+        font-weight: bold;
+    }
+
+    .sign-in{
+        font-size: 15px;
+        margin-top: 20px;
+        padding-right: 25vw;
+        padding-left: 25vw;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .left-black2{
+        position: relative;
+        width: 100vw;
+        top: 0px;
+        left: 0px;
+        height: 350px;
+        box-shadow: 0px 0px 30px 30px black;
+    }
+
+    .movie-rentals{
+        font-size: 45px;
+        font-weight: bold;
+    }
+
+    .early{
+        font-size:17px ;
+    }
+
+    .text-container2{
+        text-align: center;
+    }
+
+    .rent-now{
+        font-size: 16px;
+        padding-right: 35vw;
+        padding-left: 35vw;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .third-section{
+        flex-wrap: wrap;
+        z-index: 90;
+    }
+    .first-background{
+        background-position-x: right;
+    }
+    .second-background{
+        background-position-x: right;
+    }
+
+    .grid-channels-section{
+        position: relative;
+        width: 100vw;
+        top: 200px;
+        height: 330px;
+    }
+    .channels-section{
+        margin-top: 60px;
+        width: 350px;
+        margin: auto;
+    }
+    .channel-image{
+        width:100px;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .channel-text{
+        width: 80vw;
+    }
+
+    .flex-para-section{
+        left:10vw;
+        width: 90vw;
+    }
+
+    .right-black{
+        position: relative;
+        width: 100vw;
+        margin-left: 0;
+        top: 368px;
+    }
+    .last-section{
+        background-position-x: left;
+        /* position: relative;
+        top: 88px; */
+    }
+
+    .last-para{
+        width: 100vw;
+        position: relative;
+    }
+
+    .right-black{
+        text-align: center;
+    }
+    
+    .get-started{
+        font-size: 16px;
+        padding-right: 35vw;
+        padding-left: 35vw;
+        margin: auto;
+        margin-top: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    footer{
+        height: 120px;
+        bottom: -270px;
+    }
+
+    .color-logo{
+        width:120px;
+    }
+    .links{
+        font-size: 13px;
+    }
+    .copyright{
+        font-size: 12px;
+    }
+}

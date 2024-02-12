@@ -1,0 +1,41 @@
+footer{
+    position: relative;
+    height: 90px;
+    background-color: #222222;
+    z-index: 40;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-div{
+    display: block;
+}
+.color-logo{
+    margin-top: 15px;
+    width: 73px;
+    display: block;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: center;
+}
+
+.links{
+    display: block;
+    text-decoration: none;
+    color: #0f79af;
+    font-size: 10px;
+    margin-right: 10px;
+    margin-top: 3px;
+    font-weight: 300;
+}
+.footer-copyright{
+    color: rgb(147, 145, 145);
+    text-align: center;
+    font-size: 10px;
+    font-weight: 300;
+}
